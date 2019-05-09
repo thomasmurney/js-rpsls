@@ -37,7 +37,7 @@ function matchup(weapon1, weapon2){
   switch(weapon1){
 
     case "rock": if(weapon2 === "scissors" || weapon2 === "lizard"){
-      document.getElementById("showresult").innerHTML = "Rock crushes " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Rock crushes " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "rock"){
       document.getElementById("showresult").innerHTML = "Both of you picked Rock, it's a draw!";
@@ -49,10 +49,10 @@ function matchup(weapon1, weapon2){
     break;
 
     case "paper": if(weapon2 === "rock"){
-      document.getElementById("showresult").innerHTML = "Paper covers " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Paper covers " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "spock"){
-      document.getElementById("showresult").innerHTML = "Paper disproves " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Paper disproves " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "paper"){
       document.getElementById("showresult").innerHTML = "Both of you picked " + weapon2 + ", it's a draw!";
@@ -65,10 +65,10 @@ function matchup(weapon1, weapon2){
     break;
 
     case "scissors": if(weapon2 === "paper"){
-      document.getElementById("showresult").innerHTML = "Scissors cuts " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Scissors cuts " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "lizard"){
-      document.getElementById("showresult").innerHTML = "Scissors decapitates " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Scissors decapitates " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "scissors"){
       document.getElementById("showresult").innerHTML = "Both of you picked " + weapon2 + ", it's a draw!";}
@@ -79,10 +79,10 @@ function matchup(weapon1, weapon2){
     }; break;
 
     case "lizard": if(weapon2 === "spock"){
-      document.getElementById("showresult").innerHTML = "Lizard poisons " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Lizard poisons " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "paper"){
-      document.getElementById("showresult").innerHTML = "Lizard eats " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Lizard eats " + weapon2 + "! You win this round!";
       scorePlayer++;
     } else if(weapon2 === "lizard"){
       document.getElementById("showresult").innerHTML = "Both of you picked " + weapon2 + ", it's a draw!";}
@@ -93,12 +93,12 @@ function matchup(weapon1, weapon2){
     }; break;
 
     case "spock": if(weapon2 === "scissors"){
-      document.getElementById("showresult").innerHTML = "Spock smashes " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Spock smashes " + weapon2 + "! You win this round!";
       scorePlayer++;
       console.log(scoreCpu);
       console.log(scorePlayer);
     } else if(weapon2 === "rock"){
-      document.getElementById("showresult").innerHTML = "Spock vaporises " + weapon2 + "!";
+      document.getElementById("showresult").innerHTML = "Spock vaporises " + weapon2 + "! You win this round!";
       scorePlayer++;
       console.log(scoreCpu);
       console.log(scorePlayer);
